@@ -1,7 +1,8 @@
 import styles from './Index.module.css'
-import { indice } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 export default function Index() {
+  const { indice } = useContent()
   return (
     <section data-screen-label="Índice" id="indice" className={styles.section}>
       <div className={styles.header}>

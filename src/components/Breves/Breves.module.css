@@ -93,3 +93,9 @@
   background: #D71920;
   padding: 9px 16px;
 }
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

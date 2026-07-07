@@ -1,7 +1,8 @@
 import styles from './Interrogatorio.module.css'
-import { interrogatorio } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 export default function Interrogatorio() {
+  const { interrogatorio } = useContent()
   const [left, right] = [
     interrogatorio.questions.slice(0, 2),
     interrogatorio.questions.slice(2, 4),

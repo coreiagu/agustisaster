@@ -1,9 +1,10 @@
 import styles from './CartasDirector.module.css'
-import { cartasDirector } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 const STAR_PATH = 'M50 0C54 38 62 46 100 50C62 54 54 62 50 100C46 62 38 54 0 50C38 46 46 38 50 0Z'
 
 export default function CartasDirector() {
+  const { cartasDirector } = useContent()
   return (
     <section data-screen-label="Cartas al director" id="cartas" className={styles.section}>
       <div className={styles.starBurst}>

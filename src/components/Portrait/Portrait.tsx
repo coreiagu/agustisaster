@@ -1,7 +1,8 @@
 import styles from './Portrait.module.css'
-import { portrait } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 export default function Portrait() {
+  const { portrait } = useContent()
   return (
     <section data-screen-label="El retrato" id="retrato" className={styles.section}>
       <div className={styles.header}>

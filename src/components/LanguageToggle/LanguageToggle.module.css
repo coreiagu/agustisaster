@@ -1,0 +1,32 @@
+.toggle {
+  position: fixed;
+  bottom: 20px;
+  right: clamp(20px, 4vw, 56px);
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(11, 11, 13, .72);
+  border: 1px solid rgba(250, 250, 250, .28);
+  border-radius: 999px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .18em;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+.active {
+  color: #D71920;
+}
+
+.inactive {
+  color: #F2EDE3;
+  opacity: .55;
+}
+
+.divider {
+  color: #F2EDE3;
+  opacity: .35;
+}

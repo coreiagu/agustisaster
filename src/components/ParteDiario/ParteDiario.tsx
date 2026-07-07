@@ -1,7 +1,8 @@
 import styles from './ParteDiario.module.css'
-import { parteDiario } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 export default function ParteDiario() {
+  const { parteDiario } = useContent()
   return (
     <section data-screen-label="Parte Diario de Choferes" id="parte-diario" className={styles.section}>
       <div className={styles.header}>

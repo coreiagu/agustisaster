@@ -1,7 +1,8 @@
 import styles from './NepoverseFeature.module.css'
-import { nepoverseFeature } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 export default function NepoverseFeature() {
+  const { nepoverseFeature } = useContent()
   return (
     <section data-screen-label="Nota de tapa: Nepoverse" id="nepoverse" className={styles.section}>
       <div className={styles.inner}>

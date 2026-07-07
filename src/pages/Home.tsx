@@ -1,4 +1,5 @@
 import styles from './Home.module.css'
+import LanguageToggle from '../components/LanguageToggle/LanguageToggle'
 import Cover from '../components/Cover/Cover'
 import TornEdge from '../components/TornEdge/TornEdge'
 import Index from '../components/Index/Index'
@@ -13,6 +14,7 @@ import CartasDirector from '../components/CartasDirector/CartasDirector'
 export default function Home() {
   return (
     <div className={styles.root}>
+      <LanguageToggle />
       <Cover />
       <TornEdge variant="blackToPaper" />
       <div className={styles.paper}>

@@ -62,6 +62,7 @@
   color: #FAFAFA;
   background: transparent;
   border-bottom: 2px solid #0B0B0D;
+  word-break: break-word;
 }
 
 .socialLink {
@@ -112,4 +113,16 @@
 @keyframes flashPulse {
   0%, 100% { opacity: .45; transform: scale(.82) rotate(0deg); }
   45% { opacity: 1; transform: scale(1.08) rotate(10deg); }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 24px;
+  }
+
+  .links {
+    align-items: flex-start;
+  }
 }

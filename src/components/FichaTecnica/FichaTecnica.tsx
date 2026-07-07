@@ -1,7 +1,8 @@
 import styles from './FichaTecnica.module.css'
-import { fichaTecnica } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 export default function FichaTecnica() {
+  const { fichaTecnica } = useContent()
   return (
     <section data-screen-label="Ficha técnica" id="ficha" className={styles.section}>
       <div className={styles.inner}>

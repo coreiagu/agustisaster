@@ -62,3 +62,10 @@
   font-size: 16px;
   line-height: 1.7;
 }
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

@@ -31,7 +31,7 @@
 
 .figure {
   position: relative;
-  margin: 0;
+  margin-top: 24px; /* o el valor que se vea mejor, probá entre 16px y 32px */
 }
 
 .imageFrame {
@@ -129,4 +129,21 @@
   line-height: 1.35;
   width: 355px;
   height: 58px;
+}
+
+@media (max-width: 1023px) {
+  .body {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quote {
+    width: 100%;
+    height: auto;
+  }
 }

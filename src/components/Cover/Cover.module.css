@@ -173,3 +173,9 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+@media (max-width: 640px) {
+  .section {
+    background-image: linear-gradient(rgba(11, 11, 13, .65), rgba(11, 11, 13, .65)), url('/assets/whothefuck2.png');
+  }
+}

@@ -1,7 +1,8 @@
 import styles from './Breves.module.css'
-import { breves } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 export default function Breves() {
+  const { breves } = useContent()
   return (
     <section data-screen-label="Breves" id="breves" className={styles.section}>
       <div className={styles.header}>

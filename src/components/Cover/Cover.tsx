@@ -1,9 +1,9 @@
 import styles from './Cover.module.css'
-import { cover } from '../../data/content'
+import { useContent } from '../../hooks/useContent'
 
 const STAR_PATH = 'M50 0C54 38 62 46 100 50C62 54 54 62 50 100C46 62 38 54 0 50C38 46 46 38 50 0Z'
 
-function TickerLoop({ loopKey }: { loopKey: string }) {
+function TickerLoop({ loopKey, cover }: { loopKey: string; cover: ReturnType<typeof useContent>['cover'] }) {
   return (
     <>
       {cover.tickerItems.map((item, i) => (
@@ -17,6 +17,7 @@ function TickerLoop({ loopKey }: { loopKey: string }) {
 }
 
 export default function Cover() {
+  const { cover } = useContent()
   return (
     <section data-screen-label="Tapa" className={styles.section}>
       <div className={styles.grain} />
@@ -65,8 +66,8 @@ export default function Cover() {
 
       <div className={styles.tickerOuter}>
         <div className={styles.tickerInner}>
-          <TickerLoop loopKey="a" />
-          <TickerLoop loopKey="b" />
+          <TickerLoop loopKey="a" cover={cover} />
+          <TickerLoop loopKey="b" cover={cover} />
         </div>
       </div>
     </section>

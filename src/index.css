@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0B0B0D;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #D71920;
+  color: #FAFAFA;
+}
+
+a {
+  color: #D71920;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FAFAFA;
+  background: #D71920;
+}
+
+@keyframes flashPulse {
+  0%, 100% { opacity: .45; transform: scale(.82) rotate(0deg); }
+  45% { opacity: 1; transform: scale(1.08) rotate(10deg); }
+}
+
+@keyframes tearJitter {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(2px); }
+}
+
+@keyframes liveBlink {
+  0%, 60%, 100% { opacity: 1; }
+  30% { opacity: .25; }
+}
+
+@keyframes tickerRoll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes grainDrift {
+  0% { background-position: 0 0; }
+  100% { background-position: 120px 90px; }
+}

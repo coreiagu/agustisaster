@@ -1,0 +1,31 @@
+.blackToPaperWrap {
+  position: relative;
+  height: 60px;
+  background: #F2EDE3;
+  overflow: hidden;
+}
+
+.blackToPaperShape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: #0B0B0D;
+  animation: tearJitter 7s ease-in-out infinite;
+  clip-path: polygon(0 0,100% 0,100% 42%,97% 66%,94% 40%,90% 70%,86% 46%,83% 74%,79% 50%,75% 80%,71% 44%,67% 72%,63% 55%,59% 82%,55% 48%,51% 76%,47% 58%,43% 84%,39% 50%,35% 72%,31% 60%,27% 80%,23% 46%,19% 74%,15% 56%,11% 80%,7% 52%,3% 72%,0 60%);
+}
+
+.paperToBlackShape {
+  position: relative;
+  height: 56px;
+  background: #0B0B0D;
+  margin-top: clamp(30px, 4vh, 60px);
+  animation: tearJitter 8s ease-in-out infinite;
+  clip-path: polygon(0 55%,3% 74%,7% 50%,11% 72%,15% 56%,19% 78%,23% 48%,27% 70%,31% 58%,35% 80%,39% 50%,43% 72%,47% 56%,51% 78%,55% 48%,59% 70%,63% 58%,67% 80%,71% 50%,75% 72%,79% 56%,83% 74%,87% 48%,91% 70%,94% 58%,97% 76%,100% 52%,100% 100%,0 100%);
+}
+
+@keyframes tearJitter {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(2px); }
+}

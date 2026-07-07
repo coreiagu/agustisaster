@@ -1,0 +1,108 @@
+.section {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(40px, 6vh, 84px) clamp(20px, 4vw, 56px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #D71920;
+  margin-bottom: 8px;
+}
+
+.headerRight {
+  color: #0B0B0D;
+}
+
+.heading {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(30px, 4.6vw, 66px);
+  line-height: .9;
+  letter-spacing: -.01em;
+  margin: 6px 0 12px;
+}
+
+.subheading {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: clamp(17px, 1.6vw, 21px);
+  line-height: 1.45;
+  color: #3a3a3d;
+  max-width: 60ch;
+}
+
+.byline {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #0B0B0D;
+  border-top: 1px solid rgba(11, 11, 13, .35);
+  border-bottom: 1px solid rgba(11, 11, 13, .35);
+  padding: 8px 0;
+  margin: 16px 0 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 4vw, 52px);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.question {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: clamp(17px, 1.7vw, 21px);
+  color: #D71920;
+  margin-bottom: 8px;
+}
+
+.answer {
+  font-family: 'Newsreader', serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.note {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: #8a8a8d;
+  margin-top: 6px;
+}
+
+.highlightedBlock {
+  border: 2px solid #D71920;
+  padding: 18px;
+}
+
+.highlightedAnswer {
+  font-family: 'Abril Fatface', serif;
+  font-size: clamp(30px, 4vw, 54px);
+  line-height: 1;
+}
+
+.highlightedNote {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .06em;
+  color: #8a8a8d;
+  margin-top: 10px;
+}

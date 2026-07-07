@@ -1,0 +1,22 @@
+.root {
+  background: #0B0B0D;
+  color: #FAFAFA;
+  font-family: 'Newsreader', serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.paper {
+  position: relative;
+  background: #F2EDE3;
+  color: #0B0B0D;
+}
+
+.grainOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .06;
+  background-image: radial-gradient(circle, #0B0B0D 1px, transparent 1.4px);
+  background-size: 6px 6px;
+}

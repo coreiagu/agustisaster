@@ -1,0 +1,132 @@
+.section {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(30px, 4vh, 60px) clamp(20px, 4vw, 56px);
+  border-top: 2px solid #0B0B0D;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: #D71920;
+  margin-bottom: 26px;
+}
+
+.headerRight {
+  color: #0B0B0D;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+}
+
+.figure {
+  position: relative;
+  margin: 0;
+}
+
+.imageFrame {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border: 1px solid #0B0B0D;
+  overflow: hidden;
+}
+
+.imageFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.figcaption {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+  color: #0B0B0D;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.eyebrow {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 12px;
+  color: #D71920;
+}
+
+.heading {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(30px, 4.2vw, 58px);
+  line-height: .94;
+  letter-spacing: -.01em;
+  margin: 10px 0 6px;
+}
+
+.subheading {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: clamp(17px, 1.6vw, 21px);
+  line-height: 1.45;
+  color: #3a3a3d;
+  margin-bottom: 16px;
+}
+
+.byline {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #0B0B0D;
+  border-top: 1px solid rgba(11, 11, 13, .35);
+  border-bottom: 1px solid rgba(11, 11, 13, .35);
+  padding: 8px 0;
+  margin-bottom: 20px;
+}
+
+.body {
+  column-count: 2;
+  column-gap: 30px;
+  font-family: 'Newsreader', serif;
+  font-size: 15.5px;
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.body p {
+  margin-bottom: 14px;
+}
+
+.dropCap {
+  font-family: 'Abril Fatface', serif;
+  font-size: 52px;
+  float: left;
+  line-height: .72;
+  margin: 6px 10px 0 0;
+  color: #D71920;
+}
+
+.quote {
+  margin: 22px 0 0;
+  border-left: 4px solid #D71920;
+  padding-left: 18px;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: clamp(19px, 2vw, 26px);
+  line-height: 1.35;
+  width: 355px;
+  height: 58px;
+}

@@ -197,6 +197,6 @@ export const cartasDirector = {
   email: 'coreiagu@gmail.com',
   linkedin: 'https://www.linkedin.com/in/agustinacorei/',
   github: 'https://github.com/coreiagu',
-  footerIssn: 'Agustisaster — ISSN pending invention',
+  footerIssn: 'Agustisaster',
   footerLocation: 'Bahía Blanca, Argentina',
 }

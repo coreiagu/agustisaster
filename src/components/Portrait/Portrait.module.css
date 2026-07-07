@@ -142,6 +142,10 @@
     grid-template-columns: 1fr;
   }
 
+  .figure {
+    order: 2;
+  }
+
   .quote {
     width: 100%;
     height: auto;

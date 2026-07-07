@@ -22,6 +22,11 @@ export default function Interrogatorio() {
             <div key={item.q}>
               <div className={styles.question}>{item.q}</div>
               <p className={styles.answer}>{item.a}</p>
+              {item.link && (
+                <a className={styles.link} href={item.link.url} target="_blank" rel="noopener noreferrer">
+                  {item.link.label} →
+                </a>
+              )}
             </div>
           ))}
         </div>

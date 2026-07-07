@@ -88,6 +88,20 @@
   margin-top: 6px;
 }
 
+.link {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: #D71920;
+  margin-top: 6px;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #0B0B0D;
+}
+
 .highlightedBlock {
   border: 2px solid #D71920;
   padding: 18px;

@@ -4,7 +4,7 @@ export const cover = {
   nav: {
     left: 'Project Manager',
     center: 'Técnica en Computación',
-    right: 'React Developer',
+    right: 'Fullstack Developer',
   },
   edition: 'Vol. 01 · Edición 2026',
   location: 'Bahía Blanca, Arg.',
@@ -48,12 +48,12 @@ export const portrait = {
   figcaption: 'Agustina Corei, en su escritorio. Bahía Blanca.',
   eyebrow: 'Perfil',
   heading: 'DE LA PLANILLA AL CÓDIGO',
-  subheading: 'Seis años gestionando operaciones. Un día decidió programar la solución ella misma.',
+  subheading: 'De fundamentalista del Excel a hereje del código.',
   byline: 'Por Agustina Corei · Bahía Blanca',
   dropCap: 'S',
-  firstParagraphRest: 'eis años como nexo entre gerencia, operaciones y dirección en empresas de logística e industria metalúrgica. Procesos que se caían si una sola persona faltaba, hasta que se cansó de señalarlo y empezó a resolverlo ella misma, en código.',
+  firstParagraphRest: 'eis años como nexo entre gerencia, operaciones y dirección en empresas industriales. Ahí está lo que la separa de otro dev: no programa problemas que le explicaron en una reunión, programa problemas que gestionó desde adentro.',
   secondParagraph: {
-    before: 'Con una Tecnicatura en Computación, Google PM Certificate, Scrum, y años de experiencia real en entornos empresariales. Esa confluencia no es una característica más de su perfil: ',
+    before: 'Tecnicatura en Computación, Google PM Certificate, Scrum Fundamentals Certified, y años liderando proyectos reales, no de manual. Esa unión —Project Manager y developer en la misma persona— no es una característica más de su perfil: ',
     bold: 'es',
     after: ' su perfil.',
   },
@@ -68,7 +68,7 @@ export const nepoverseFeature = {
   subheading: 'Nepoverse: el mapa de quién es hijo, nieto o sobrino de quién en el espectáculo argentino.',
   urlLabel: 'nepoverse-argentino.vercel.app',
   paragraphs: [
-    'Todo arrancó con un tuit llamando "nepo baby" a un famoso, que respondió bloqueándome. Un video de una youtuber terminó de darle forma a la idea: el mapa completo de conexiones familiares del espectáculo argentino era enorme, y nadie lo había armado visualmente.',
+    'Todo arrancó con un tuit llamando "nepo baby" a un famoso, que respondió bloqueándola. Un video de una youtuber terminó de darle forma a la idea: el mapa completo de conexiones familiares del espectáculo argentino era enorme, y nadie lo había armado visualmente.',
     { bold: 'El problema:', text: 'Nadie había mapeado visualmente la red de parentescos del espectáculo argentino.' },
     { bold: 'La solución:', text: 'Un grafo interactivo con cientos de nodos, navegable — con una regla no negociable desde el día uno: cero menores de edad.' },
   ],
@@ -154,7 +154,8 @@ export const interrogatorio = {
   questions: [
     {
       q: '¿A qué developer admirás?',
-      a: 'A nulo.lol. "La empresa líder en shitposts políticos de alta calidad." Lo conocí en Twitter y soy su fan, nivel el fan de Wanda.',
+      a: 'A nulo.lol: "La empresa líder en shitposts políticos de alta calidad." Lo conocí en Twitter y soy su fan, nivel el fan de Wanda.',
+      link: { label: 'nulo.lol', url: 'https://nulo.lol/' },
     },
     {
       q: '¿Tu punto fuerte en lo laboral?',
